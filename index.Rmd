@@ -45,6 +45,8 @@ htmltools::img(src = 'core_logo.png',
 ```
 
 
+TESTESTESTESTESTESTESTESTESTESTESTESTESTESTEST
+
 
 It is impossible to be an expert in all aspects of science, mathematics, statistics, business, communication, psychology and all the other myriad skills necessary to solve complex problems in the real world. UConn's Statistical Consulting Services aims to bridge the gap between statisticians and domain experts from across disciplines at UConn and across Connecticut. We provide statistical support in the form of [consultations](https://statsconsulting.uconn.edu/), seminars and workshops. 
 
