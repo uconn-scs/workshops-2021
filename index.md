@@ -1,7 +1,7 @@
 ---
 title: "UConn SCS Spring 2021 Workshop Series"
 author: "The SCS Team"
-date: "`r Sys.Date()`"
+date: "2021-02-22"
 output:
   prettydoc::html_pretty:
     theme: cerulean
@@ -31,18 +31,7 @@ output:
 
 </form>
 
-```{r, echo=FALSE, eval = FALSE, include=FALSE}
-htmltools::img(src = 'logo2.png', 
-               alt = 'logo', 
-               style = 'position:absolute; top:100px; 
-               left:300px; padding:10px;')
 
-htmltools::img(src = 'core_logo.png', 
-               alt = 'logo', 
-               style = 'position:absolute; top:120px; 
-               left:950px; padding:10px;')
-
-```
 
 
 
@@ -133,9 +122,9 @@ All of you code can now be written in this script and saved on your computer for
 ### Introduction to R{#intro}
 Now that we have opened a new R script, we can begin writing commands and sending them to R to be executed. Each line of code that we run will be printed in the console, next to the '>'. R will then evaluate the command and try to execute it. Some of the simplest commands are for using R like a calculator. For example, type '1 + 100' into your R script.
 
-```{r, eval = FALSE}
-1 + 100
 
+```r
+1 + 100
 ```
 
 ![](intro1.png)
@@ -156,13 +145,13 @@ Here, R has evaluated your command, and executed the arithmetic and output the r
 
 You can also highlight multiple lines in your R script and run them simultaneously, using one of the options above:
 
-```{r, eval = FALSE}
+
+```r
 1 + 100
 
 10*20
 
 (5+3) / 2
-
 ```
 ![](intro4.png)
 
@@ -171,9 +160,9 @@ In this case, R has executed all three commands, and output the results in the o
 ##### Storing values in variables
 We can store values in variables using the assignment operator '<-', like this:
 
-```{r, eval = FALSE}
-x <- 1/4
 
+```r
+x <- 1/4
 ```
 
 Now, we will see that an object 'x' has appeared in our environment tab. 
@@ -182,7 +171,8 @@ Now, we will see that an object 'x' has appeared in our environment tab.
 
 We have essentially stored the number `0.25` in the object 'x'. We can now execute any commands on 'x' that expect a number:
 
-```{r, eval = FALSE}
+
+```r
 1 + x
 ```
 
@@ -190,9 +180,9 @@ We have essentially stored the number `0.25` in the object 'x'. We can now execu
 
 We can store multiple values in an object, for example:
 
-```{r, eval = FALSE}
-x <- c(10, 15, 20)
 
+```r
+x <- c(10, 15, 20)
 ```
 
 ![](intro7.png)
@@ -200,18 +190,18 @@ x <- c(10, 15, 20)
 
 We can now perform functions on the object x, for example, arithmetic:
 
-```{r, eval = FALSE}
-x + 5
 
+```r
+x + 5
 ```
 
 ![](intro8.png)
 
 Or more advanced functions, like calculating the mean:
 
-```{r, eval = FALSE}
-mean(x)
 
+```r
+mean(x)
 ```
 
 ![](intro9.png)
@@ -223,25 +213,25 @@ There are 2 steps to using packages in R: i) installing them onto your machine, 
 
 For the first step, you can use the `install.packages` function. For these workshops, we will install serveral packages. To begin, install `ggplot2`:
 
-```{r, eval = FALSE}
-install.packages("ggplot2")
 
+```r
+install.packages("ggplot2")
 ```
 
 ![](intro10.png)
 
 You can check which packages you have loaded by typing `installed.packages()`. Once you have installed a package, it will not need to be installed again.
 
-```{r, eval = FALSE}
-installed.packages()
 
+```r
+installed.packages()
 ```
 
 To make the packages available to in the current session, you need to use the `library()` function. Note this will only work on installed packages. You will need to load packages each time you start a new Rstudio session. 
 
-```{r, eval = FALSE}
-library(ggplot2)
 
+```r
+library(ggplot2)
 ```
 
 ![](intro11.png)
@@ -262,7 +252,8 @@ Some very useful packages that we recommend you install prior to attending our w
 ### Annotation in your R script
 It is very important to be able to annotate your scripts. This is so that when you return to a script after a few months (or years!), you can have reminders of what you did, and why you did it. Annotation in R is done with the '#'. Bt default, annotations, or **comments**, will become green in your script. Here's an example. 
 
-```{r, eval = F}
+
+```r
 # load libraries
 library(ggplot2)
 
@@ -274,7 +265,6 @@ ggplot(data = diamonds,
        mapping = aes(x = caret, color = cut)) + # call a plot, add aesthetics
   geom_freqpoly(lwd = 1.1) + # specify type of plot and line width
   xlim(c(0, 3)) # set limits of x-axis
-
 ```
 
 ![](intro12.png)
