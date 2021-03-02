@@ -1,7 +1,7 @@
 ---
 title: "UConn SCS Spring 2021 Workshop Series"
 author: "The SCS Team"
-date: "2021-02-22"
+date: "2021-03-02"
 output:
   prettydoc::html_pretty:
     theme: cerulean
@@ -66,7 +66,7 @@ Similar to a [Software or Data Carpentry workshop](https://carpentries.org/), in
 
 
 ### During the workshop{#during}
-1. Sign in on our [registration form]()
+1. Sign in on our registration form.
 2. It is hard to keep track of everything on your screen, especially if you only have a single monitor. If you are in this situation, we recommend having as few programs open on your screen as possible. We recommend splitting your layout so that you have your Rstudio session on one side of your screen, and WebEx on the other side of the screen:
 ![](screen_layout.png)
 
@@ -244,7 +244,7 @@ Some very useful packages that we recommend you install prior to attending our w
 * corrplot \newline
 * GGally \newline
 * sjPlot \newline
-* ggplotly \newline
+
 
 
 ### Annotation in your R script
