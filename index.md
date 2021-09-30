@@ -1,7 +1,7 @@
 ---
-title: "UConn SCS Spring 2021 Workshop Series"
+title: "UConn SCS Fall 2021 Workshop Series"
 author: "The SCS Team"
-date: "2021-03-02"
+date: "2021-09-30"
 output:
   prettydoc::html_pretty:
     theme: cerulean
@@ -19,9 +19,6 @@ output:
     <button 
       style="background-color:#159061;color:white;width:143px;
       height:40px" type="submit" formaction="#intro">Introduction to R</button>
-    <button 
-      style="background-color:#159061;color:white;width:143px;
-      height:40px" type="submit" formaction="#abcd">Workshop Outlines</button>
     <button 
       style="background-color:#159061;color:white;width:143px;
       height:40px" type="submit" formaction="Intro_R.html">Pre-workshop</button>
@@ -272,22 +269,6 @@ Notice that this code includes 'in-line comments', where comments have been plac
 #### Saving R script
 If you would like to keep all of the code you have written, you can now safe this file (File > Save), and reopen it the next time you need it. You could also then share you script (along with your data) with collaborators via email, or collaborative software, like [github](https://github.com/).
 
-
----
-
-## Workshop Outlines{#abcd}
-
-### Linear Regression in R
-
-This workshop will outline some of the fundamentals of running linear regression models in R. In particular, the workshop will focus on coding multiple regression models, and how to conduct model diagnostics. 
-
-### Generalized Linear Models in R I and II
-
-TBD
-
-### Mixed-Effects/Hierarchical Linear Models in R I and II
-
-TBD
 
 --- 
 
